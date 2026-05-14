@@ -1,0 +1,22 @@
+{
+  "name": "robtzexpress",
+  "version": "0.0.1",
+  "description": "API for robtz.vercel.app",
+  "keywords": [],
+  "licence": "MIT",
+  "type": "module",
+  "main": "src/server.ts",
+  "scripts": {
+    "start": "tsx ./src/server.ts",
+    "start:dev": "tsx watch ./src/server.ts"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.8.0",
+    "tsx": "^4.22.0",
+    "typescript": "^6.0.3"
+  }
+}
