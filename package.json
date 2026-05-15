@@ -10,6 +10,7 @@
     "scripts": {
         "prebuild": "rm -rf ./dist/",
         "build": "tsc",
+        "start:prod": "node ./dist/server.js",
         "start": "node --env-file=.env.local ./dist/server.js",
         "start:dev": "tsx watch --env-file=.env.development ./src/server.ts"
     },
