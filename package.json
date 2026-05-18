@@ -2,7 +2,7 @@
     "name": "robtzexpress",
     "version": "0.0.1",
     "description": "API for robtz.vercel.app",
-    "keywords": [    
+    "keywords": [
         "express"
     ],
     "type": "module",
@@ -14,7 +14,8 @@
         "start:dev": "tsx watch --env-file=.env.development ./src/server.ts"
     },
     "dependencies": {
-        "express": "^5.2.1"
+        "express": "^5.2.1",
+        "postgres": "^3.4.9"
     },
     "devDependencies": {
         "@types/express": "^5.0.6",

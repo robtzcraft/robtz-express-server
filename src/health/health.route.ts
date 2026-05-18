@@ -15,6 +15,7 @@ healthRouter.get( '/liveness', ( req, res ) => {
     res.status( 200 ).json( response );
 } );
 healthRouter.get( '/readiness', async ( req, res ) => {
+    res.status( 200 ).json( { status: 'Server ready' } );
 } );
 
 export { healthRouter };
