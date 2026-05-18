@@ -15,10 +15,10 @@ server.on('unhandledRejection', (reason) => {
     console.log(`${reason}`);
 });
 
-/* Graceful Shutting */
+/* Graceful shutdown */
 const gracefulShutdownSnippet = () => {
     server.close(() => {
-        console.log(`Shutting down server. PORT ${PORT} deactivating...`);
+        console.log(`Shutting down server...`);
         process.exit(0);
     });
 
