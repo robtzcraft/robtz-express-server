@@ -1,2 +1,8 @@
+# Robtz's Express server
 
-## Welcome to robtz server
+## Dependencies
+
+### Development
+
+- `ESlint`
+    - `jiti`

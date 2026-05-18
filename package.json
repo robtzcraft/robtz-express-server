@@ -2,7 +2,7 @@
     "name": "robtzexpress",
     "version": "0.0.1",
     "description": "API for robtz.vercel.app",
-    "keywords": [    
+    "keywords": [
         "express"
     ],
     "type": "module",
@@ -11,14 +11,19 @@
         "prebuild": "rm -rf ./dist/",
         "build": "tsc",
         "start": "node --env-file=.env.local ./dist/server.js",
-        "start:dev": "tsx watch --env-file=.env.development ./src/server.ts"
+        "start:dev": "tsx watch --env-file=.env.development ./src/server.ts",
+        "lint": "npx eslint src/"
     },
     "dependencies": {
-        "express": "^5.2.1"
+        "express": "^5.2.1",
+        "postgres": "^3.4.9"
     },
     "devDependencies": {
+        "@eslint/js": "^10.0.1",
         "@types/express": "^5.0.6",
         "@types/node": "^25.8.0",
+        "eslint": "^10.4.0",
+        "jiti": "^2.7.0",
         "tsx": "^4.22.0",
         "typescript": "^6.0.3"
     }
