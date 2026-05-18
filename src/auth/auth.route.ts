@@ -1,10 +1,9 @@
+import { Router } from 'express';
+import { newUserTest } from './auth.controller.js';
 
-import { Router } from "express";
-import { newUserTest } from "./auth.controller.js";
+const authRouter = Router();
 
-const authRouter = Router( );
-
-authRouter.get( '/', newUserTest );
+authRouter.get('/', newUserTest);
 // authRouter.post( '/register',  )
 
 export default authRouter;
